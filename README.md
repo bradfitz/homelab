@@ -18,7 +18,7 @@ I have 3 physical machines plugged into 3 switches, with all switches
 connected to each other. I don't have a physical
 router/gateway. Instead, a Linux virtual machine handles the IPv4 NAT,
 IPv6 announcements, DHCP, DNS, etc, and that Linux VM floats between
-the 3 VMs as needed, including live migration during maintenance.
+the 3 machines as needed, including live migration during maintenance.
 
 My 4 Wifi APs are PoE-powered from the two switches. I have two ISPs.
 
