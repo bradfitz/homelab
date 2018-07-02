@@ -60,6 +60,11 @@ Higher quality photos at [https://photos.app.goo.gl/Y5Ah6AeGekVkf3tY9](https://p
 * 2 x [UniFi AP-AC-Pro](https://www.ubnt.com/unifi/unifi-ap-ac-pro/)
 * 2 x [UniFi AP-AC-In Wall](https://inwall.ubnt.com/)
 
+## Other
+
+* [UniFi Cloud Key](https://www.ubnt.com/unifi/unifi-cloud-key/) to run the Unifi controller. This isn't necessary to boot the cluster. It just runs the pretty UI and is needed to add new devices. I could run the software on a VM too, I suppose. But I had it from earlier, so I'm still using it.
+* misc Raspberry Pis for monitoring
+
 ## Power
 
 The whole setup including all APs and switches draws about 220 watts
