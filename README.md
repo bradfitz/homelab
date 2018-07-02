@@ -24,8 +24,20 @@ My 4 Wifi APs are PoE-powered from the two switches. I have two ISPs.
 
 I have two UPSes and two PDUs powering separate halves of the gear,
 and separate ISPs, giving me about 35-45 minutes of runtime (and thus
-Internt) during a power outage. The whole house might be dark, but the
+Internet) during a power outage. The whole house might be dark, but the
 battery-powered wifi will work.
+
+# In photos
+
+Higher quality photos at [https://photos.app.goo.gl/Y5Ah6AeGekVkf3tY9](https://photos.app.goo.gl/Y5Ah6AeGekVkf3tY9).
+
+![closed](img/closed.jpg)
+
+![top](img/top.jpg)
+
+![switches](img/switches.jpg)
+
+![bottom](img/bottom.jpg)
 
 # Gear
 
