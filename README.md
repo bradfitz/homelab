@@ -77,8 +77,8 @@ $0.0974/kWh.
 
 * The LAN is `10.0.0.0/16`.
 * Untrusted VLAN is `10.2.0.0/16`, which the LAN can connect to, but the untrusted machines can't initiate connections back out to.
-* Gateway, DHCP at `10.0.0.1`
-* DHCP range is `10.0.100-199.x` so they're easy to recognize.
+* Gateway, DHCP at `10.0.0.1` (and `10.2.0.1` for untrusted)
+* DHCP range is `10.0.100-199.x` so they're easy to recognize. Likewise for the untrusted VLAN.
 * Networking gear have static IPs `10.0.6.x` (6 is above the letter `N` on the keyboard, which is how I map letters to numbers usually)
 * ...
 
