@@ -1,5 +1,7 @@
 # Brad's Homelab
 
+Hi, I'm [Brad](https://bradfitz.com), @bradfitz [on Twitter](https://twitter.com/bradfitz), etc.
+
 This page describes my home server & networking setup.
 
 # Goals
@@ -48,7 +50,10 @@ battery-powered wifi will work.
 
 ## Power
 
-The whole setup including all APs and switches draws about 220 watts idle.
+The whole setup including all APs and switches draws about 220 watts
+idle. Power is pretty cheap in Seattle. Washington State (as of April
+2018) has the cheapest electricity in the United States, at
+$0.0974/kWh.
 
 * 2 x [APC Back-UPS Pro 1000 BR1000G](https://www.amazon.com/APC-Back-UPS-Battery-Protector-BR1000G/dp/B0038ZTZ3W)
 * 2 x [APC AP7801 Rack PDU](https://www.amazon.com/gp/product/B004Y39T7Y/)
