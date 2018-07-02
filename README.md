@@ -60,7 +60,56 @@ The whole setup including all APs and switches draws about 220 watts idle.
 
 # Software
 
-* [Proxmox VE](https://www.proxmox.com/en/) for VMs (previously tried VMware for about a year, both are [annoying in different ways](https://twitter.com/bradfitz/status/1000087524876800000).
+* [Proxmox VE](https://www.proxmox.com/en/) is the Debian-based base OS on the servers, and Proxmox is a nice UI for managing qemu VMs and Ceph. I previously tried VMware for about a year, both are [annoying in different ways](https://twitter.com/bradfitz/status/1000087524876800000. Proxmox might be a little rough in places, but I prefer it.
 * [Ceph](https://ceph.com/) for storage. I love Ceph so much and discovering it makes this whole adventure worth it. Still much to learn, though.
+* [ISC DHCP](https://www.isc.org/downloads/dhcp/) for the DHCP server. I auto-generate its config from a Go program that has a map of most my important devices' MAC addresses.
+* [CoreDNS](https://coredns.io/) for the DNS server on the gateway VM, which lets me encrypt all upstream DNS so ISPs can't see or mess with it. (even though they can see IPs and SNI)
+* [tcpproxy](https://github.com/google/tcpproxy) that [Dave Anderson](https://github.com/danderson) and I wrote. I use it on an HA VM to route ingress traffic to various VMs & services.
 
+# Config
+
+## Network config
+
+* The LAN is `10.0.0.0/16`.
+* Untrusted VLAN is `10.2.0.0/16`, which the LAN can connect to, but the untrusted machines can't initiate connections back out to.
+* Gateway, DHCP at `10.0.0.1`
+* DHCP range is `10.0.100-199.x` so they're easy to recognize.
+* Networking gear have static IPs `10.0.6.x` (6 is above the letter `N` on the keyboard, which is how I map letters to numbers usually)
+* ...
+
+## Proxmox/host config
+
+...
+
+## Device config
+
+...
+
+## Firewall config
+
+* [Ferm](http://ferm.foo-projects.org/) for simplifying writing iptables rules
+
+# Monitoring
+
+* Not enough yet. WIP. Plan is to use Prometheus more.
+* A Raspberry Pi has USB connections to the two UPSes.
+
+# Home Automation
+
+* [Home Assistant](https://www.home-assistant.io/) running in an HA VM. It does ZWave using...
+* ... [remserial](https://github.com/hunterli/remserial) to let me move a serial device across the network to ...
+* ... a stateless Raspberry Pi with an [Aeotec Z-Stick Gen5](https://www.amazon.com/Aeotec-Z-Stick-Z-Wave-create-gateway/dp/B00X0AWA6E/).
+
+# Testing
+
+TODO: link to program with dependency graph of all devices, services,
+and connections, and to simulate failures to validate there are no
+hidden SPOFs.
+
+# Thanks
+
+Much thanks to [Dave Anderson](https://github.com/danderson) for
+helping with a lot of this. He has a very similar setup at his home
+and we enjoy watching each other both succeed and fail at trying new
+things.
 
