@@ -77,7 +77,7 @@ $0.0974/kWh.
 
 # Software
 
-* [Proxmox VE](https://www.proxmox.com/en/) is the Debian-based base OS on the servers, and Proxmox is a nice UI for managing qemu VMs and Ceph. I previously tried VMware for about a year, both are [annoying in different ways](https://twitter.com/bradfitz/status/1000087524876800000. Proxmox might be a little rough in places, but I prefer it.
+* [Proxmox VE](https://www.proxmox.com/en/) is the Debian-based base OS on the servers, and Proxmox is a nice UI for managing qemu VMs and Ceph. I previously tried VMware for about a year, both are [annoying in different ways](https://twitter.com/bradfitz/status/1000087524876800000). Proxmox might be a little rough in places, but I prefer it.
 * [Ceph](https://ceph.com/) for storage. I love Ceph so much and discovering it makes this whole adventure worth it. Still much to learn, though.
 * [ISC DHCP](https://www.isc.org/downloads/dhcp/) for the DHCP server. I auto-generate its config from a Go program that has a map of most my important devices' MAC addresses.
 * [CoreDNS](https://coredns.io/) for the DNS server on the gateway VM, which lets me encrypt all upstream DNS so ISPs can't see or mess with it. (even though they can see IPs and SNI)
