@@ -72,7 +72,7 @@ $0.0974/kWh.
 
 ## ISPs
 
-* CenturyLink Fiber (gigabit), primary ISP.
+* [CenturyLink Fiber](https://www.centurylink.com/fiber/plans-and-pricing/seattle-washington/), gigabit, primary ISP.
 * [Atlas Networks](http://www.gigabitseattle.com/), my backup ISP: a ~100Mbps radio link, using a [Unifi NanoBeam AC](https://www.ubnt.com/airmax/nanobeam-ac-gen2/).
 
 # Software
@@ -122,6 +122,13 @@ $0.0974/kWh.
 TODO: link to program with dependency graph of all devices, services,
 and connections, and to simulate failures to validate there are no
 hidden SPOFs.
+
+# Past failures
+
+* I used to use a [Soekris net6501](http://www.soekris.com/products/net6501-1.html) as my home gateway, but its CPU maxes out NAT'ing about 300 Mbps, sadly, so I started looking at alternatives when I got Centurylink fiber.
+* A truck once clipped the fiber running to our house. It's nice having a second WAN link.
+* I used to use a [UniFi Security Gateway Pro](https://www.ubnt.com/unifi-routing/unifi-security-gateway-pro-4/) but it failed one day and wouldn't power on any more. [Dave](https://github.com/danderson) had a backup for me handy, but the Unifi controller software wedged itself and wouldn't let me remove the old (dead) one and thus I couldn't add the new replacement, since you can only have one gateway in a site at a time. I [was not amused](https://twitter.com/bradfitz/status/966756630787383296), and that was the final straw that made me realize I wanted a highly-available setup.
+* I used to use VMware with highly-available vCenter setup, but the whole thing was felt bloated and slow and enterprisey, and I couldn't stand the Flash UI, which was still required for many operations. That's increasingly going away and being replaced with HTML5, but I also couldn't stand the VMware enterprise-targeted documentation. And I wanted to use something Open Source, too.
 
 # Thanks
 
