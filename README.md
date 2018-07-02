@@ -53,7 +53,7 @@ Higher quality photos at [https://photos.app.goo.gl/Y5Ah6AeGekVkf3tY9](https://p
 ## Switches
 
 * 2 x [UniFi Switch 24 PoE-250W](https://www.ubnt.com/unifi-switching/unifi-switch-poe/): 24x Power-over-Ethernet 1Gbps ports
-* 1 x [UniFi Switch 16 XG](https://www.ubnt.com/unifi-switching/unifi-switch-16-xg/): 10Gbps Aggregation Switch
+* 1 x [UniFi Switch 16 XG](https://www.ubnt.com/unifi-switching/unifi-switch-16-xg/): 10Gbps Aggregation Switch, primarily for Ceph (but part of same LAN). I only have one of these, but if it fails the Linux bond fails over to the 1Gbps switches.
 
 ## Wi-Fi APs
 
