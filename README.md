@@ -4,6 +4,12 @@ Hi, I'm [Brad](https://bradfitz.com), @bradfitz [on Twitter](https://twitter.com
 
 This page describes my home server & networking setup.
 
+# Discussion
+
+* On Twitter: https://twitter.com/bradfitz/status/1013848084789395457
+
+Questions welcome!
+
 # Goals
 
 The primary goals of this project are...
