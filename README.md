@@ -7,6 +7,7 @@ This page describes my home server & networking setup.
 # Discussion
 
 * On Twitter: https://twitter.com/bradfitz/status/1013848084789395457
+* On Hacker News: https://news.ycombinator.com/item?id=17444230
 
 Questions welcome!
 
