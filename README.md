@@ -70,7 +70,10 @@ Higher quality photos at [https://photos.app.goo.gl/Y5Ah6AeGekVkf3tY9](https://p
 
 ## Other
 
-* [UniFi Cloud Key](https://www.ubnt.com/unifi/unifi-cloud-key/) to run the Unifi controller. This isn't necessary to boot the cluster. It just runs the pretty UI and is needed to add new devices. I could run the software on a VM too, I suppose. But I had it from earlier, so I'm still using it.
+* Previously used a [UniFi Cloud
+  Key](https://www.ubnt.com/unifi/unifi-cloud-key/) to run the Unifi
+  controller, but since moved it to a VM after it had a hardware/SD
+  card failure.
 * misc Raspberry Pis for monitoring
 
 ## Power
