@@ -55,6 +55,7 @@ Higher quality photos at [https://photos.app.goo.gl/Y5Ah6AeGekVkf3tY9](https://p
   * boot/OS disk: 64 GB SATA DOM ([SSD-DM064-SMCMVN1](https://www.supermicro.com/products/nfo/SATADOM.cfm))
   * SSD 1: Samsung SSD 850 EVO 500GB
   * SSD 2: Samsung SSD 860 EVO 1TB
+  * SSD 3: Samsung SSD 970 EVO Plus 2TB (M.2 NVMe)
   * HDD, external: 8000 GB [HGST HUH728080ALE600](https://www.amazon.com/gp/product/B00NP6AOCK)
 
 ## Switches
@@ -79,6 +80,7 @@ idle. Power is pretty cheap in Seattle. Washington State (as of April
 2018) has the cheapest electricity in the United States, at
 $0.0974/kWh.
 
+* 1 x [APC 3000VA Smart-UPS](https://www.amazon.com/gp/product/B0785NCFMY)
 * 2 x [APC Back-UPS Pro 1000 BR1000G](https://www.amazon.com/APC-Back-UPS-Battery-Protector-BR1000G/dp/B0038ZTZ3W)
 * 2 x [APC AP7801 Rack PDU](https://www.amazon.com/gp/product/B004Y39T7Y/)
 
@@ -93,7 +95,9 @@ $0.0974/kWh.
 * [Ceph](https://ceph.com/) for storage. I love Ceph so much and discovering it makes this whole adventure worth it. Still much to learn, though.
 * [ISC DHCP](https://www.isc.org/downloads/dhcp/) for the DHCP server. I auto-generate its config from a Go program that has a map of most my important devices' MAC addresses.
 * [CoreDNS](https://coredns.io/) for the DNS server on the gateway VM, which lets me encrypt all upstream DNS so ISPs can't see or mess with it. (even though they can see IPs and SNI)
+* [CoreRAD](https://github.com/mdlayher/corerad) for IPv6 route announcements.
 * [tcpproxy](https://github.com/google/tcpproxy) that [Dave Anderson](https://github.com/danderson) and I wrote. I use it on an HA VM to route ingress traffic to various VMs & services.
+* [WireGuard](https://www.wireguard.com/) for site-to-site routing between family member houses, and from devices.
 
 # Config
 
